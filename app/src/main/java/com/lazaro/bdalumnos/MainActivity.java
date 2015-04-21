@@ -97,7 +97,7 @@ public class MainActivity extends ActionBarActivity {
 
         et_idusuario.setText("");
 
-        et_nombre.setText("");
+        et_nombre.setText(""); 
         et_apellidos.setText("");
         et_curp.setText("");
         et_email.setText("");
