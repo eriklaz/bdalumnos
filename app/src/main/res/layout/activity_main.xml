@@ -1,0 +1,184 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".principal"
+    android:background="@drawable/wallnegro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRO DE ALUMNOS"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fffaff4f" />
+
+        <TextView
+            android:text="@string/matricula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_idusuario"
+            android:inputType="phone"
+            android:digits="1234567890"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:text="Nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_nombre"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:text="Apellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_apellidos"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:text="@string/curp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_curp"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:text="@string/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_email"
+            android:inputType="textEmailAddress"
+            android:textColor="#ffffffff" />
+
+        <TextView
+            android:text="@string/carrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_carrera"
+            android:textColor="#ffffffff" />
+
+
+        <TextView
+            android:text="@string/turno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_turno"
+            android:textColor="#ffffffff" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/alta"
+                android:id="@+id/btn_guardar"
+                android:onClick="guardar"
+                android:layout_weight="1"
+                android:drawableRight="@android:drawable/ic_menu_save" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/buscar"
+                android:id="@+id/btn_buscar"
+                android:onClick="buscar"
+                android:layout_weight="1"
+                android:drawableRight="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/baja"
+                android:id="@+id/btn_borrar"
+                android:onClick="borrar"
+                android:layout_weight="1"
+                android:drawableRight="@android:drawable/ic_menu_delete" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/modificar"
+                android:id="@+id/btn_editar"
+                android:onClick="editar"
+                android:layout_weight="1"
+                android:drawableRight="@android:drawable/ic_menu_edit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/limpiar"
+                android:id="@+id/btn_limpiar"
+                android:onClick="limpiar"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
